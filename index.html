@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Typer</title>
+</head>
+<style type="text/css">
+    /* 로그인 구역 */
+    #loginsection {
+        margin-top: 1rem;
+        border: 2px solid salmon;
+        width: 20rem;
+        padding-bottom: 1rem;
+        border-radius: 0% 10% 0% 10%;
+    }
+
+    /* 로그인 입력 값 */
+    .loginfield {
+        padding-top: 7.5px;
+        padding-bottom: 7.5px;
+        padding-left: 8px;
+        border: 1.5px solid gray;
+        border-radius: 5px;
+        font-size: 17.5px;
+        font-family: 'consolas';
+    }
+
+    /* 입력 중일 때*/
+    .loginfield:focus {
+        border-color: dodgerblue;
+        box-shadow: 0 0 8px 0 dodgerblue;
+    }
+    /* input 버튼 */
+    .inputbutton {
+        border: none;
+        background-color: unset;
+        font-size: 25px;
+        font-weight: 900;
+        font-family: 'Consolas';
+        color: rgb(50, 50, 50);
+        text-shadow: 2px 2px rgb(187, 187, 187);
+        padding-bottom: 0.5rem;
+        cursor: pointer;
+    }
+    /* input 호버링 */
+    .inputbutton:hover {
+        color: rgb(0, 255, 200);
+    }
+</style>
+
+<body>
+    <div align="center">
+        <!-- 로고 이미지 -->
+        <img src="./img/Code_Typer.png" height="343.5px" width="444px" />
+        <!-- 로그인 구역 -->
+        <section id="loginsection">
+        	<form method="post" action="login.jsp">
+        		<p style="margin-top:0px; margin-bottom:0px;"><img src="./img/Keyboard_Icon.png" width="120px" height="120px"></p>
+            	<p><input class="loginfield" type="text" name="id" placeholder="ID" /></p>
+            	<p><input class="loginfield" type="password" name="password" placeholder="Password" /></p>
+            	<p><input class="inputbutton" type="submit" value="LOGIN" />&nbsp;&nbsp;&nbsp;&nbsp;<a class="inputbutton" href="register.html" style="text-decoration: none">REGISTER</a></p>
+        	</form>
+        </section>
+    </div>
+    <!--<p style="text-align: right; color:rgb(70, 70, 70); padding-right:15px">ⓒ GS Corp.</p>-->
+</body>
+
+</html>

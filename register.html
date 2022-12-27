@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Typer</title>
+</head>
+<style type="text/css">
+    #registerfont {
+        font-size: 35px;
+        font-family: 'consolas';
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        text-shadow: 1.5px 1.5px rgb(85, 175, 0);
+        border-radius: 5px 5px 5px 5px;
+        margin: 0.5rem 0 1rem 0;
+    }
+
+    .infofont {
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        font-family: "Arial";
+        font-weight: 500;
+    }
+
+    .inputfield {
+        height: 1.5rem;
+        width: 13rem;
+        border: none;
+        border-bottom: 1px solid black;
+        font-family: Arial;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .inputfield:focus {
+        background-color: rgb(245, 245, 245);
+    }
+
+    #cancelbutton {
+        text-decoration: none;
+        border: 1.25px solid rgb(179, 179, 179);
+        background-color: white;
+        border-radius: 7.5px;
+        font-family: Arial;
+        color: rgb(175, 175, 175);
+        padding: 10px 10px 10px 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    #cancelbutton:hover {
+        background-color: black;
+        border: 1px solid black;
+        color: white;
+    }
+
+    #okbutton {
+        border: 1.25px solid rgb(187, 0, 40);
+        background-color: rgb(255, 39, 86);
+        border-radius: 7.5px;
+        font-family: Arial;
+        color: white;
+        padding: 10px 30px 10px 30px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    #okbutton:hover {
+        border: 1.25px solid rgb(255, 39, 86);
+        background-color: unset;
+        color: rgb(255, 39, 86);
+    }
+</style>
+
+<body>
+    <div align="center" style="padding:2rem 0 2rem 0;">
+        <img src="./img/Code_Typer.png" width="222px" height="171.75px" />
+    </div>
+    <div align="center"
+        style="background-color:rgb(255, 248, 242); border-top:0.5px solid rgb(100, 100, 100); border-bottom:0.5px solid rgb(100, 100, 100); padding:10px 0 10px 0;">
+        <p id="registerfont">REGISTER</p>
+        <form method="post" action="id_check.jsp">
+            <div style="background-color:white; width: 35rem; border:0.5px solid rgb(167, 167, 167); border-radius: 10px">
+            <p style="margin:1.5rem 0 1.5rem 0">
+                <font class="infofont">&nbsp;ID&nbsp;</font>
+                <input class="inputfield" type="text" name="id" />
+            </p>
+            <p style="margin:1.5rem 0 1.5rem 0">
+                <font class="infofont">&nbsp;PASSWORD&nbsp;</font>
+                <input class="inputfield" type="password" name="password" />
+            </p>
+            <p style="margin:1.5rem 0 1.5rem 0">
+                <font class="infofont">&nbsp;NAME&nbsp;</font>
+                <input class="inputfield" type="text" name="name" />
+            </p>
+            <p style="margin:1.5rem 0 1.5rem 0">
+                <font class="infofont">&nbsp;GENDER&nbsp;</font>
+                <font class="infofont" style="color:rgb(0, 102, 255)">&nbsp;MAN&nbsp;</font><input type="radio"
+                    name="gender" value="Man" />
+                <font class="infofont" style="color:rgb(255, 0, 76)">&nbsp;WOMAN&nbsp;</font><input type="radio"
+                    name="gender" value="Woman" />
+            </p>
+            <p style="margin:1.5rem 0 1.5rem 0">
+                <font class="infofont">&nbsp;AGE&nbsp;</font>
+                <input class="inputfield" type="text" name="age" />
+            </p>
+            <p style="margin:1.5rem 0 1.5rem 0">
+                <font class="infofont">&nbsp;EMAIL&nbsp;</font>
+                <input class="inputfield" type="text" name="email" />
+            </p>
+            </div>
+        <p><a href="index.html" id="cancelbutton">&nbsp;CANCEL&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;<input id="okbutton" type="submit"
+                value="OK"></p>
+        </form>
+    </div>
+</body>
+
+</html>
