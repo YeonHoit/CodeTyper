@@ -5,8 +5,8 @@
 	request.setCharacterEncoding("utf-8");
 	String database=request.getParameter("database");
 	String url="jdbc:mysql://localhost:3306/keyboard_practice";
-	String id="root";
-	String pw="tjguswls100";
+	String id="";
+	String pw="";
 	String sql1="select count(*) from "+database;
 	String sql2="select * from "+database;
 	try
