@@ -7,8 +7,8 @@
 	int wpm=Integer.parseInt(request.getParameter("wpm"));
 	int accuracy=Integer.parseInt(request.getParameter("accuracy"));
 	String url="jdbc:mysql://localhost:3306/keyboard_practice";
-	String id="root";
-	String pw="tjguswls100";
+	String id="";
+	String pw="";
 	String sql="insert into record values('"+login_id+"','"+language+"',"+wpm+","+accuracy+")";
 	try
 	{
