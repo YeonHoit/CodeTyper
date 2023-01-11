@@ -13,8 +13,8 @@
         request.setCharacterEncoding("utf-8");
         String login_id=(String)session.getAttribute("login_id");
         String url="jdbc:mysql://localhost:3306/keyboard_practice";
-        String id="root";
-        String pw="tjguswls100";
+        String id="";
+        String pw="";
         String sql_c_record="select AVG(wpm), AVG(accuracy) from record where id='"+login_id+"' and use_language='C'";
         String sql_c_plus_record="select AVG(wpm), AVG(accuracy) from record where id='"+login_id+"' and use_language='C++'";
         String sql_python_record="select AVG(wpm), AVG(accuracy) from record where id='"+login_id+"' and use_language='Python'";
