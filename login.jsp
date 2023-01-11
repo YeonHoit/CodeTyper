@@ -5,8 +5,8 @@
 	String login_id=request.getParameter("id");
 	String login_pw=request.getParameter("password");
 	String url="jdbc:mysql://localhost:3306/keyboard_practice";
-	String id="root";
-	String pw="tjguswls100";
+	String id="";
+	String pw="";
 	String sql="select * from member where id='"+login_id+"'and password='"+login_pw+"'";
 	try
 	{
