@@ -18,8 +18,8 @@
 	int age=Integer.parseInt(request.getParameter("age"));
 	String email=request.getParameter("email");
 	String url="jdbc:mysql://localhost:3306/keyboard_practice";
-	String id="root";
-	String pw="tjguswls100";
+	String id="";
+	String pw="";
 	String sql="select * from member where id='"+register_id+"'";
 	String sql2="insert into member values('"+register_id+"','"+register_pw+"','"+name+"','"+gender+"',"+age+",'"+email+"')";
 	try
